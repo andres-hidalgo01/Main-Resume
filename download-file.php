@@ -1,6 +1,7 @@
 <?php
 
 $filename=$_GET["curriculum_english.pdf"]; 
+$file_url= 'https://github.com/andresisho/Main-Resume/blob/master/' . $filename;
 
 if(isset($_GET['path']))
 {
@@ -22,7 +23,7 @@ header('Pragma: public');
 flush();
 
 //Read the size of the file
-readfile($filename);
+readfile($file_url);
 
 //Terminate from the script
 die();
