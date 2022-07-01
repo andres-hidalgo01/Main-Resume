@@ -27,10 +27,12 @@ readfile($filename);
 //Terminate from the script
 die();
 }
+
 else{
-echo "File does not exist.";
+    echo "File does not exist.";
+  }
 }
-}
+
 else
 echo "Filename is not defined."
 ?>
